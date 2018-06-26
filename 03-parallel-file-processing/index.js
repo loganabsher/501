@@ -1,7 +1,7 @@
 'use strict';
 
-const libModules = require('./lib/fileReader.js');
+const libModules = require('./lib/libModules.js');
 
-libModules.fileReader(`${__dirname}/assets/one.txt`);
-libModules.fileReader(`${__dirname}/assets/two.txt`);
-libModules.fileReader(`${__dirname}/assets/three.txt`);
+libModules.fileReader(`${__dirname}/assets/one.txt`, null);
+libModules.fileReader(`${__dirname}/assets/two.txt`, null);
+libModules.fileReader(`${__dirname}/assets/three.txt`, null);
