@@ -5,14 +5,13 @@ const assert = require('assert');
 
 describe('greet.js test', function () {
   describe('sayHey() test', function () {
-    it('should return hello john doe', () => {
-      let res = Greet('john doe');
-      assert.ok(res === 'hello john doe', 'returned data does not equal john doe');
+    it('should return Hello World!', () => {
+      let res = Greet('World!');
+      assert.ok(res === 'Hello World!', 'returned data does not equal john doe');
     });
-    it('should throw wrong data type error', () => {
-      assert.throws(function () {
-        Greet(true);
-      }, 'error not thrown');
+    it('should return null with invalid data type', () => {
+      let res = Greet(true);
+      assert.ok(res === null, 'not returning null with invalid data type');
     });
     it('should throw no data entered error', () => {
       assert.throws(function () {

@@ -6,13 +6,17 @@ exports.map = function (arr, callback) {
   return Array.prototype.map.call(arr, callback);
 };
 
-exports.map([1, 2, 3, 4], function(ele) {console.log(ele * 2)});
+exports.map([1, 2, 3, 4], function (ele) {
+  ele * 2;
+});
 
 exports.filter = function (arr, callback) {
   return Array.prototype.filter.call(arr, callback);
 };
 
-exports.filter([1, 2, 3, 4], function (ele){console.log(ele < 3)});
+exports.filter([1, 2, 3, 4], function (ele) {
+  ele < 3;
+});
 
 exports.concat = function (arr1, arr2) {
   return Array.prototype.concat.apply(arr1, arr2);

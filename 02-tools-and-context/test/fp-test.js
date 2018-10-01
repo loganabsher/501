@@ -7,6 +7,7 @@ const test = [1, 2, 3, 4];
 
 describe('fb.js test', function () {
   describe('#map', function () {
+    // NOTE: fix this
     it('should return 2, 4, 6, 8', () => {
       expect(fp).to.have.property('map');
       expect(fp.map).to.be.a('function');
